@@ -1,17 +1,22 @@
-list=[1,2,3,4,5]
-sl=list.sort()
+numbers = [1, 2, 3, 4, 5]
+numbers.sort()
 
-print(list,type(list))
-small=list[0]
-print(small)
-big=list[-1]
-print(big)
-print("========================")
-value=0
-for i in list:
-    value=value+i
-print(value)
+print(numbers, type(numbers))
+
+# Smallest and largest
+small = numbers[0]
+big = numbers[-1]
+print("Smallest:", small)
+print("Biggest:", big)
 print("========================")
 
-print("max:",value-big, 'min:',value-small)
+def addition(k):
+    value = 0
+    for i in k:
+        value = value + i
+    return value
+
+print("========================")
+final = addition(numbers)
+print(final-small, final-big )
 print("========================")
